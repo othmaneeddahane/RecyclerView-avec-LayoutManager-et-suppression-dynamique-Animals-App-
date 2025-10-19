@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/imgAnimal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="Image animal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom animal"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/txtSpecies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espèce"
+            android:textSize="14sp"
+            android:textColor="#666" />
+        <TextView
+            android:id="@+id/txtCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories : 0"
+            android:textSize="13sp"
+            android:textColor="#999" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Détails"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50" />
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supprimer"
+        android:textColor="#FFFFFF"
+        android:background="#F44336"
+        android:layout_marginStart="8dp" />
+</LinearLayout>
